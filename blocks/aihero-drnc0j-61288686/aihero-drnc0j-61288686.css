@@ -12,8 +12,7 @@
 /* Left Column Styling (Title, Date, and Description) */
 .aihero-drnc0j-61288686-container > .aihero-drnc0j-61288686-wrapper > .block.aihero-drnc0j-61288686 > div:first-of-type > div {
   display: flex;
-  flex-direction: row; /* Ensure the rows are laid out side by side at the appropriate levels */
-  flex-wrap: wrap; /* Allow text elements to wrap properly */
+  flex-flow: row wrap; /* Ensure the rows are laid out side by side at the appropriate levels */ /* Allow text elements to wrap properly */
   flex: 2; /* Allocate more space for the left column */
   gap: 1rem; /* Add spacing between elements within the left column */
 }
@@ -60,7 +59,7 @@
 }
 
 /* Responsiveness: Stack Columns Vertically on Smaller Screens */
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .aihero-drnc0j-61288686-container > .aihero-drnc0j-61288686-wrapper > .block.aihero-drnc0j-61288686 {
     flex-direction: column; /* Stack columns vertically */
     align-items: flex-start; /* Align content to the start */
