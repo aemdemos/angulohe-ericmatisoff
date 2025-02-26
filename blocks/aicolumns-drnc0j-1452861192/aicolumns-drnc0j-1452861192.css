@@ -1,71 +1,70 @@
 
-.aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 {
+.background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 {
   display: flex; /* Use flexbox for overall layout */
   flex-wrap: wrap; /* Allow wrapping to form rows */
-  gap: 40px; /* Increase spacing between rows and cards */
-  justify-content: space-between; /* Ensure even distribution of rows */
-  background-color: #fff; /* Set block background to white */
+  gap: 16px; /* Adjust spacing between rows and cards */
+  justify-content: flex-start; /* Align rows to the start */
+  align-items: flex-start; /* Ensure consistent vertical alignment of cards */
 }
 
-.aicolumns-drnc0j-1452861192 > div {
-  display: flex;
-  flex-direction: row; /* Ensure cards are side by side in rows */
-  gap: 32px; /* Add consistent spacing between cards */
-  justify-content: space-between; /* Ensure even spacing between cards */
-  width: 100%; /* Make rows span the full width */
+.background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div {
+  display: flex; /* Use flexbox for rows */
+  flex-direction: row; /* Ensure cards are positioned side by side */
+  gap: 16px; /* Spacing between cards */
+  justify-content: flex-start; /* Align cards to the start */
+  width: 100%; /* Ensure rows span the full width */
 }
 
-.aicolumns-drnc0j-1452861192 > div > div {
-  flex: 1 1 calc(50% - 32px); /* Ensure two cards per row with equal width */
+.background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div > div {
+  flex: 0 1 calc(50% - 16px); /* Two cards per row with consistent spacing */
   display: flex; /* Use flexbox for card content */
-  flex-flow: row wrap; /* Adjust nested elements to be side by side if applicable */ /* Handle wrapping of card content as needed */
+  flex-direction: row; /* Ensure nested elements are positioned side by side */
+  flex-wrap: wrap; /* Allow content within the card to wrap */
   background-color: var(--background-color); /* White card background */
   border-radius: 8px; /* Add rounded corners */
-  box-shadow: 0 2px 4px rgb(0 0 0 / 10%); /* Subtle shadow for cards */
-  padding: 28px; /* Add more padding inside cards */
-  gap: 16px; /* Add spacing between elements inside cards */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+  padding: 14px; /* Reduce padding for a more compact layout */
+  gap: 8px; /* Spacing between elements inside the card */
 }
 
-.aicolumns-drnc0j-1452861192 img {
-  width: 100%; /* Ensure images span the full width of the card */
+.background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 img {
+  width: 100%; /* Ensure images span the full width of their container */
   height: auto; /* Maintain aspect ratio */
-  border-radius: 4px; /* Add rounded corners to images */
+  display: block; /* Ensure proper centering */
+  margin: 0; /* Remove additional margins */
 }
 
-.aicolumns-drnc0j-1452861192 h3 {
-  margin-top: 8px;
-  margin-bottom: 12px;
-  text-align: left; /* Ensure titles align with card content */
-  font-size: 1.25rem; /* Ensure a prominent title size */
+.background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 h3 {
+  margin-top: 4px; /* Reduce margin above the title */
+  margin-bottom: 6px; /* Reduce margin below the title */
+  font-size: 1.25rem; /* Prominent title size */
 }
 
-.aicolumns-drnc0j-1452861192 p {
-  margin-bottom: 8px; /* Add spacing between paragraphs */
-  text-align: left; /* Align text to the left */
-  line-height: 1.6; /* Improve readability with larger line spacing */
+.background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 p {
+  margin-bottom: 4px; /* Reduce spacing between paragraphs */
+  line-height: 1.5; /* Adjust line height for better readability */
 }
 
-.aicolumns-drnc0j-1452861192 p:last-of-type {
-  display: flex;
-  align-items: center; /* Align author image and text horizontally */
-  justify-content: flex-start; /* Ensure content aligns to the left */
-  gap: 16px; /* Increase spacing between author image and text */
-  margin-top: auto; /* Push author section to the bottom of the card */
+.background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 p:last-of-type {
+  display: flex; /* Align avatar and name side by side */
+  align-items: center; /* Vertically center the author section */
+  gap: 6px; /* Reduce spacing between avatar and name */
+  margin-top: auto; /* Push the author section to the bottom */
 }
 
-.aicolumns-drnc0j-1452861192 p:last-of-type img {
-  width: 48px; /* Set size of author image */
-  height: 48px;
-  border-radius: 50%; /* Ensure the author image is circular */
+.background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 p:last-of-type img {
+  width: 32px; /* Adjust avatar size */
+  height: 32px;
+  border-radius: 50%; /* Make the avatar circular */
 }
 
-@media (width <= 768px) {
-  .aicolumns-drnc0j-1452861192 > div {
-    flex-direction: column; /* Stack rows vertically on smaller screens */
-    gap: 32px; /* Maintain spacing between stacked rows */
+@media (max-width: 768px) {
+  .background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div > div {
+    flex: 1 1 100%; /* Make cards take up full width on smaller screens */
+    margin-bottom: 8px; /* Adjust spacing between stacked cards */
   }
 
-  .aicolumns-drnc0j-1452861192 > div > div {
-    flex: 1 1 100%; /* Make cards take full width on smaller screens */
+  .background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div {
+    gap: 8px; /* Adjust spacing between rows */
   }
 }
