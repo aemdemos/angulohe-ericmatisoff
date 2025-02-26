@@ -4,7 +4,7 @@
   flex-wrap: wrap; /* Allow wrapping to form rows */
   gap: 40px; /* Increase spacing between rows and cards */
   justify-content: space-between; /* Ensure even distribution of rows */
-  background-color: #ffffff; /* Set block background to white */
+  background-color: #fff; /* Set block background to white */
 }
 
 .aicolumns-drnc0j-1452861192 > div {
@@ -18,11 +18,10 @@
 .aicolumns-drnc0j-1452861192 > div > div {
   flex: 1 1 calc(50% - 32px); /* Ensure two cards per row with equal width */
   display: flex; /* Use flexbox for card content */
-  flex-direction: row; /* Adjust nested elements to be side by side if applicable */
-  flex-wrap: wrap; /* Handle wrapping of card content as needed */
+  flex-flow: row wrap; /* Adjust nested elements to be side by side if applicable */ /* Handle wrapping of card content as needed */
   background-color: var(--background-color); /* White card background */
   border-radius: 8px; /* Add rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%); /* Subtle shadow for cards */
   padding: 28px; /* Add more padding inside cards */
   gap: 16px; /* Add spacing between elements inside cards */
 }
@@ -60,7 +59,7 @@
   border-radius: 50%; /* Ensure the author image is circular */
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .aicolumns-drnc0j-1452861192 > div {
     flex-direction: column; /* Stack rows vertically on smaller screens */
     gap: 32px; /* Maintain spacing between stacked rows */
