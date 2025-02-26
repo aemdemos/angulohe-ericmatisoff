@@ -1,70 +1,68 @@
 
 .background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 {
   display: flex; /* Use flexbox for overall layout */
-  flex-wrap: wrap; /* Allow wrapping to form rows */
-  gap: 16px; /* Adjust spacing between rows and cards */
-  justify-content: flex-start; /* Align rows to the start */
-  align-items: flex-start; /* Ensure consistent vertical alignment of cards */
+  flex-wrap: wrap; /* Allow blocks to wrap into rows */
+  gap: 24px; /* Consistent spacing between rows and columns */
+  justify-content: flex-start; /* Align blocks to the start of each row */
 }
 
 .background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div {
-  display: flex; /* Use flexbox for rows */
-  flex-direction: row; /* Ensure cards are positioned side by side */
-  gap: 16px; /* Spacing between cards */
-  justify-content: flex-start; /* Align cards to the start */
+  display: flex; /* Use flexbox for row-level alignment */
+  flex-direction: row; /* Ensure blocks are aligned side by side */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 24px; /* Space between blocks */
   width: 100%; /* Ensure rows span the full width */
 }
 
 .background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div > div {
-  flex: 0 1 calc(50% - 16px); /* Two cards per row with consistent spacing */
-  display: flex; /* Use flexbox for card content */
-  flex-direction: row; /* Ensure nested elements are positioned side by side */
-  flex-wrap: wrap; /* Allow content within the card to wrap */
-  background-color: var(--background-color); /* White card background */
+  flex: 1 1 calc(50% - 24px); /* Two blocks per row with consistent spacing */
+  display: flex; /* Use flexbox for block content */
+  flex-direction: row; /* Ensure content inside blocks aligns side by side */
+  gap: 16px; /* Consistent spacing between elements inside blocks */
+  align-items: flex-start; /* Align content to the top */
+  background-color: var(--background-color); /* White block background */
   border-radius: 8px; /* Add rounded corners */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
-  padding: 14px; /* Reduce padding for a more compact layout */
-  gap: 8px; /* Spacing between elements inside the card */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for blocks */
+  padding: 16px; /* Consistent padding for blocks */
 }
 
-.background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 img {
-  width: 100%; /* Ensure images span the full width of their container */
-  height: auto; /* Maintain aspect ratio */
+.background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div > div img {
+  width: auto; /* Allow images to fit their natural width */
+  max-height: 100%; /* Ensure images maintain aspect ratio */
   display: block; /* Ensure proper centering */
   margin: 0; /* Remove additional margins */
 }
 
-.background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 h3 {
-  margin-top: 4px; /* Reduce margin above the title */
-  margin-bottom: 6px; /* Reduce margin below the title */
-  font-size: 1.25rem; /* Prominent title size */
+.background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div > div h3 {
+  margin-top: 8px; /* Space above the title */
+  margin-bottom: 12px; /* Space below the title */
+  font-size: 1.5rem; /* Adjust title font size */
 }
 
-.background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 p {
-  margin-bottom: 4px; /* Reduce spacing between paragraphs */
-  line-height: 1.5; /* Adjust line height for better readability */
+.background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div > div p {
+  margin-bottom: 8px; /* Consistent spacing between paragraphs */
+  line-height: 1.6; /* Adjust line height for readability */
 }
 
-.background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 p:last-of-type {
+.background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div > div p:last-of-type {
   display: flex; /* Align avatar and name side by side */
   align-items: center; /* Vertically center the author section */
-  gap: 6px; /* Reduce spacing between avatar and name */
+  gap: 12px; /* Space between avatar and name */
   margin-top: auto; /* Push the author section to the bottom */
 }
 
-.background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 p:last-of-type img {
+.background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div > div p:last-of-type img {
   width: 32px; /* Adjust avatar size */
   height: 32px;
   border-radius: 50%; /* Make the avatar circular */
 }
 
 @media (max-width: 768px) {
-  .background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div > div {
-    flex: 1 1 100%; /* Make cards take up full width on smaller screens */
-    margin-bottom: 8px; /* Adjust spacing between stacked cards */
+  .background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 {
+    flex-direction: column; /* Stack blocks vertically */
   }
 
-  .background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div {
-    gap: 8px; /* Adjust spacing between rows */
+  .background-blue > .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div > div {
+    flex: 1 1 100%; /* Blocks take full width on smaller screens */
   }
 }
