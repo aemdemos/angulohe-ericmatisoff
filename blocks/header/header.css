@@ -1,82 +1,85 @@
 
 .header-wrapper {
-  background-color: white; /* Solid white background for the header */
+  background-color: white; /* Ensure a solid white background */
 }
 
 .header-wrapper .nav-wrapper {
-  position: fixed; /* Fix header in place */
-  z-index: 2; /* Ensure header is above other elements */
-  display: flex; /* Flexbox layout for alignment */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  width: 100%; /* Full width of the page */
+  position: fixed; /* Fix the header in place */
+  z-index: 2; /* Ensure the header is above other content */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center the navigation content */
+  align-items: center; /* Vertically align content */
+  width: 100%; /* Make the header span the full width of the page */
+}
+
+header {
+  display: flex; /* Ensure the header is a flex container */
+  flex-direction: row; /* Align elements side by side */
 }
 
 header nav {
-  display: flex; /* Flexbox layout for navigation */
-  max-width: 1264px; /* Constrain width for centered alignment */
-  justify-content: space-between; /* Space out elements (brand logo, menu, tools) */
-  align-items: center; /* Align items vertically in the center */
+  display: flex; /* Flexbox for side-by-side layout */
+  max-width: 1264px; /* Constrain the width of the nav content */
+  justify-content: space-between; /* Space out the three sections */
+  align-items: center; /* Vertically align items */
   width: 100%; /* Use full available width */
   padding: 0 32px; /* Add horizontal padding */
 }
 
 header nav .nav-brand {
-  order: 1; /* Ensure logo is on the left */
-  flex-shrink: 0; /* Prevent logo from shrinking */
+  order: 1; /* Ensure the brand logo is on the left */
+  flex-shrink: 0; /* Prevent the logo from shrinking */
 }
 
 header nav .nav-brand img {
-  max-height: 50px; /* Constrain logo height */
-  object-fit: contain; /* Prevent logo from being stretched */
+  max-height: 50px; /* Constrain the height of the logo */
+  object-fit: contain; /* Ensure the logo is not stretched */
 }
 
 header nav .nav-sections {
-  order: 2; /* Ensure navigation menu is in the middle */
-  flex: 1; /* Allow navigation to take up remaining space */
+  order: 2; /* Ensure the navigation menu is in the middle */
+  flex: 1; /* Allow the menu to take up remaining space */
   display: flex; /* Display links horizontally */
-  justify-content: center; /* Center links within navigation */
+  justify-content: center; /* Center the links */
 }
 
 header nav .nav-tools {
-  order: 3; /* Ensure tools section is on the right */
-  flex-shrink: 0; /* Prevent tools section from shrinking */
+  order: 3; /* Ensure the tools section is on the right */
+  flex-shrink: 0; /* Prevent the tools section from shrinking */
 }
 
 header nav .nav-hamburger {
-  display: none; /* Hide hamburger menu */
+  display: none; /* Hide the hamburger menu */
   visibility: hidden; /* Ensure it's not visible */
 }
 
 .default-content-wrapper {
   display: flex; /* Flexbox for side-by-side layout */
   flex-direction: row; /* Ensure horizontal alignment */
-  align-items: flex-start; /* Align both sections to the top */
-  gap: 60px; /* Increase horizontal spacing between sections */
-  max-width: 1280px; /* Adjust the width of the content block */
-  margin: 0 auto; /* Center content horizontally on the page */
-  background-color: white; /* Ensure white background */
+  align-items: flex-start; /* Align items to the top */
+  gap: 1px; /* Minimize the horizontal gap for better alignment */
+  max-width: 1200px; /* Adjust the width of the content block */
+  margin: 0 auto; /* Center the block horizontally */
+  background-color: white; /* Ensure the background remains white */
 }
 
 .default-content-wrapper h1 {
-  display: block; /* Ensure block-level layout */
-  white-space: pre-wrap; /* Preserve line breaks for vertical stacking */
-  font-size: 6rem; /* Reduce font size for heading */
-  font-weight: 400; /* Set font weight */
+  font-size: 5.8rem; /* Reduce font size for better proportions */
+  font-weight: 700; /* Keep the bold weight */
+  line-height: 0.85; /* Tighten line height for a more compact layout */
   margin: 0; /* Remove default margins */
-  line-height: 0.95; /* Tighten line height */
-  flex: 2; /* Allow the heading to take up more space */
-  text-align: left; /* Align text to the left */
+  text-align: left; /* Ensure alignment is explicitly left */
+  flex: 2; /* Allow the header to take up more horizontal space */
 }
 
 .default-content-wrapper h4 {
-  display: block; /* Ensure block-level layout */
-  font-size: 1rem; /* Ensure regular font size for descriptive text */
-  margin: 0; /* Remove default margins */
-  line-height: 1.5; /* Adjust line height for readability */
-  color: rgb(19, 19, 19); /* Set text color */
-  background-color: white; /* Ensure white background */
-  text-align: left; /* Align text to the left */
-  max-width: 400px; /* Narrow the width of the descriptive text */
-  align-self: flex-start; /* Align the descriptive text to the top */
+  font-size: 1rem; /* Keep the font size consistent */
+  line-height: 1.5; /* Ensure good readability */
+  color: rgb(19, 19, 19); /* Set the correct text color */
+  background-color: white; /* Ensure the background remains white */
+  margin: 0; /* Remove any unnecessary margins */
+  margin-top: -0.9em; /* Further adjust the margin to align the top of `<h4>` with `<h1>` */
+  max-width: 750px; /* Slightly increase the width of the descriptive text */
+  align-self: flex-start; /* Align the text to the top */
+  text-align: left; /* Ensure the alignment is left */
 }
