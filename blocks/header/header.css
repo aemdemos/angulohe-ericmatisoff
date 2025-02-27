@@ -57,29 +57,30 @@ header nav .nav-hamburger {
   display: flex; /* Flexbox for side-by-side layout */
   flex-direction: row; /* Ensure horizontal alignment */
   align-items: flex-start; /* Align items to the top */
-  gap: 1px; /* Minimize the horizontal gap for better alignment */
-  max-width: 1200px; /* Adjust the width of the content block */
+  gap: 1rem; /* Narrow the gap between `<h1>` and `<h4>` */
+  max-width: 900px; /* Constrain the width of the content block */
   margin: 0 auto; /* Center the block horizontally */
+  padding: 1rem; /* Add balanced padding */
   background-color: white; /* Ensure the background remains white */
 }
 
 .default-content-wrapper h1 {
-  font-size: 5.8rem; /* Reduce font size for better proportions */
-  font-weight: 700; /* Keep the bold weight */
-  line-height: 0.85; /* Tighten line height for a more compact layout */
+  font-size: 7rem; /* Increase font size for greater prominence */
+  font-weight: 800; /* Keep the bold weight */
+  line-height: 1; /* Tighten the line height for compactness */
   margin: 0; /* Remove default margins */
   text-align: left; /* Ensure alignment is explicitly left */
   flex: 2; /* Allow the header to take up more horizontal space */
 }
 
 .default-content-wrapper h4 {
-  font-size: 1rem; /* Keep the font size consistent */
-  line-height: 1.5; /* Ensure good readability */
-  color: rgb(19, 19, 19); /* Set the correct text color */
-  background-color: white; /* Ensure the background remains white */
-  margin: 0; /* Remove any unnecessary margins */
-  margin-top: -0.9em; /* Further adjust the margin to align the top of `<h4>` with `<h1>` */
-  max-width: 750px; /* Slightly increase the width of the descriptive text */
-  align-self: flex-start; /* Align the text to the top */
-  text-align: left; /* Ensure the alignment is left */
+  font-size: 1.2rem; /* Maintain font size */
+  line-height: 1.5; /* Maintain good readability */
+  color: rgb(19, 19, 19); /* Ensure proper text color */
+  background-color: white; /* Ensure a white background for contrast */
+  margin: 0; /* Remove unnecessary margins */
+  margin-top: 1.5rem; /* Add more vertical spacing for alignment */
+  max-width: 350px; /* Reduce the width for better readability */
+  align-self: flex-start; /* Align the paragraph to the top */
+  text-align: left; /* Left-align the text */
 }
