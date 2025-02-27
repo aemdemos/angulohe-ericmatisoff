@@ -22,36 +22,6 @@ header nav {
   padding: 0 32px; /* Add horizontal padding */
 }
 
-.default-content-wrapper {
-  display: flex; /* Flexbox for side-by-side layout */
-  flex-direction: row; /* Ensure horizontal alignment */
-  align-items: flex-start; /* Align content at the top */
-  gap: 30px; /* Adjust spacing between sections for balance */
-  max-width: 1200px; /* Constrain width for content block */
-  margin: 0 auto; /* Center the block horizontally */
-}
-
-.default-content-wrapper h1 {
-  display: block; /* Ensure block-level layout */
-  white-space: pre-wrap; /* Preserve line breaks for vertical stacking */
-  font-size: 3rem; /* Large font size for heading */
-  font-weight: bold; /* Bold text for emphasis */
-  margin: 0; /* Remove default margins */
-  line-height: 1.2; /* Adjust line height for proper spacing */
-  flex: 1; /* Allow heading to take up its space */
-  text-align: left; /* Align text to the left */
-}
-
-.default-content-wrapper h4 {
-  flex: 1; /* Allow right section to take up remaining space */
-  font-size: 1rem; /* Smaller font size for descriptive text */
-  margin: 0; /* Remove default margins */
-  line-height: 1.5; /* Adjust line height for readability */
-  align-self: flex-start; /* Align text at the top */
-  max-width: 400px; /* Constrain width of descriptive text */
-  text-align: left; /* Align text to the left */
-}
-
 header nav .nav-brand {
   order: 1; /* Ensure logo is on the left */
   flex-shrink: 0; /* Prevent logo from shrinking */
@@ -77,4 +47,34 @@ header nav .nav-tools {
 header nav .nav-hamburger {
   display: none; /* Hide hamburger menu */
   visibility: hidden; /* Ensure it's not visible */
+}
+
+.default-content-wrapper {
+  display: flex; /* Flexbox for side-by-side layout */
+  flex-direction: row; /* Ensure horizontal alignment */
+  align-items: center; /* Vertically center-align the two sections */
+  gap: 25px; /* Reduce horizontal spacing for better cohesion */
+  max-width: 1400px; /* Widen the content block */
+  margin: 0 auto; /* Ensure horizontal centering */
+}
+
+.default-content-wrapper h1 {
+  display: block; /* Ensure block-level layout */
+  white-space: pre-wrap; /* Preserve line breaks for vertical stacking */
+  font-size: 5.5rem; /* Increase font size slightly */
+  font-weight: bold; /* Bold text for emphasis */
+  margin: 0; /* Remove default margins */
+  line-height: 1.05; /* Adjust line height for tighter spacing */
+  flex: 1; /* Allow heading to take up its space */
+  text-align: left; /* Align text to the left */
+}
+
+.default-content-wrapper h4 {
+  flex: 1; /* Allow right section to take up remaining space */
+  font-size: 1rem; /* Regular font size for descriptive text */
+  margin: 0; /* Remove default margins */
+  line-height: 1.5; /* Adjust line height for readability */
+  align-self: center; /* Ensure vertical alignment at the middle */
+  max-width: 450px; /* Narrow the descriptive text area */
+  text-align: left; /* Align text to the left */
 }
