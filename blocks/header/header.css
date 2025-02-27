@@ -1,22 +1,21 @@
 
 .header-wrapper {
-  background-color: white; /* Ensure solid white background */
+  background-color: white; /* Solid white background for the header */
 }
 
 .header-wrapper .nav-wrapper {
   position: fixed; /* Fix header in place */
   z-index: 2; /* Ensure header is above other elements */
-  display: flex; /* Flexbox for alignment */
+  display: flex; /* Flexbox layout for alignment */
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
   width: 100%; /* Full width of the page */
-  background-color: white; /* Solid background color */
 }
 
 header nav {
-  display: flex; /* Flexbox layout for main header */
+  display: flex; /* Flexbox layout for navigation */
   max-width: 1264px; /* Constrain width for centered alignment */
-  justify-content: space-between; /* Space out elements */
+  justify-content: space-between; /* Space out elements (brand logo, menu, tools) */
   align-items: center; /* Align items vertically in the center */
   width: 100%; /* Use full available width */
   padding: 0 32px; /* Add horizontal padding */
@@ -52,29 +51,32 @@ header nav .nav-hamburger {
 .default-content-wrapper {
   display: flex; /* Flexbox for side-by-side layout */
   flex-direction: row; /* Ensure horizontal alignment */
-  align-items: center; /* Vertically center-align the two sections */
-  gap: 25px; /* Reduce horizontal spacing for better cohesion */
-  max-width: 1400px; /* Widen the content block */
-  margin: 0 auto; /* Ensure horizontal centering */
+  align-items: flex-start; /* Align both sections to the top */
+  gap: 60px; /* Increase horizontal spacing between sections */
+  max-width: 1280px; /* Adjust the width of the content block */
+  margin: 0 auto; /* Center content horizontally on the page */
+  background-color: white; /* Ensure white background */
 }
 
 .default-content-wrapper h1 {
   display: block; /* Ensure block-level layout */
   white-space: pre-wrap; /* Preserve line breaks for vertical stacking */
-  font-size: 5.5rem; /* Increase font size slightly */
-  font-weight: bold; /* Bold text for emphasis */
+  font-size: 6rem; /* Reduce font size for heading */
+  font-weight: 400; /* Set font weight */
   margin: 0; /* Remove default margins */
-  line-height: 1.05; /* Adjust line height for tighter spacing */
-  flex: 1; /* Allow heading to take up its space */
+  line-height: 0.95; /* Tighten line height */
+  flex: 2; /* Allow the heading to take up more space */
   text-align: left; /* Align text to the left */
 }
 
 .default-content-wrapper h4 {
-  flex: 1; /* Allow right section to take up remaining space */
-  font-size: 1rem; /* Regular font size for descriptive text */
+  display: block; /* Ensure block-level layout */
+  font-size: 1rem; /* Ensure regular font size for descriptive text */
   margin: 0; /* Remove default margins */
   line-height: 1.5; /* Adjust line height for readability */
-  align-self: center; /* Ensure vertical alignment at the middle */
-  max-width: 450px; /* Narrow the descriptive text area */
+  color: rgb(19, 19, 19); /* Set text color */
+  background-color: white; /* Ensure white background */
   text-align: left; /* Align text to the left */
+  max-width: 400px; /* Narrow the width of the descriptive text */
+  align-self: flex-start; /* Align the descriptive text to the top */
 }
