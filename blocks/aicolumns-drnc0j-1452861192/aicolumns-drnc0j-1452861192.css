@@ -1,70 +1,85 @@
 
 .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 {
-  display: flex;
+  display: flex; /* Use flexbox for overall layout */
   flex-wrap: wrap; /* Allow rows to wrap for responsiveness */
-  gap: 12px; /* Further reduce spacing between rows and columns */
-  background-color: #fff; /* Ensure block background is white */
-  padding: 10px; /* Reduce padding around the block */
+  flex-direction: row; /* Ensure cards are laid out side by side in rows */
+  gap: 56px; /* Increase spacing between rows and columns */
+  background-color: var(--background-color); /* Set a white background */
+  padding: 36px; /* Add consistent padding around the block */
 }
 
 .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div {
-  display: flex;
-  flex-flow: row wrap; /* Ensure rows are displayed side by side */ /* Allow items within rows to wrap on smaller screens */
-  gap: 12px; /* Reduce spacing between cards for a tighter layout */
+  display: flex; /* Use flexbox for row layout */
+  flex-direction: row; /* Ensure cards in each row are side by side */
+  flex-wrap: wrap; /* Allow cards to wrap when needed */
+  gap: 56px; /* Add spacing between cards in the row */
 }
 
 .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div > div {
-  flex: 1 1 calc(50% - 12px); /* Adjust card width to fit tighter spacing */
-  max-width: calc(50% - 12px); /* Prevent cards from exceeding 50% width */
-  box-sizing: border-box; /* Include padding and borders in width calculation */
-  background-color: #fff; /* Set card background color */
-  border: none; /* Remove any borders */
-  box-shadow: 0 1px 2px rgb(0 0 0 / 10%); /* Subtle shadow for depth */
-  padding: 8px; /* Further reduce padding inside the cards */
-  display: flex;
+  flex: 1 1 calc(42% - 56px); /* Reduce card width for better spacing */
+  max-width: calc(42% - 56px); /* Ensure proper max width for cards */
+  background-color: var(--background-color); /* Set card background to white */
+  border-radius: 20px; /* Add larger rounded corners to the cards */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Add a more prominent shadow for depth */
+  padding: 36px; /* Increase padding for more breathing room */
+  display: flex; /* Use flexbox for card content layout */
   flex-direction: column; /* Stack card content vertically */
-  gap: 6px; /* Tighten spacing between elements inside the cards */
-}
-
-.aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div > div img {
-  max-width: 100%; /* Ensure images are responsive */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 4px; /* Slight rounding for image corners */
+  gap: 24px; /* Add spacing between card content elements */
+  box-sizing: border-box; /* Include padding and border in width calculations */
 }
 
 .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div > div h3 {
-  font-size: 1.2rem; /* Further reduce title font size */
-  margin: 0 0 4px; /* Reduce spacing below the title */
+  font-size: 2.2rem; /* Increase title font size for prominence */
+  font-weight: 900; /* Make titles bolder */
+  color: var(--text-color); /* Use the default text color */
+  margin: 0 0 24px; /* Add more spacing below the title */
   text-align: left; /* Ensure text alignment is left */
 }
 
 .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div > div p {
-  margin: 0 0 4px; /* Tighten spacing between paragraphs */
-  font-size: 0.85rem; /* Slightly reduce paragraph font size */
-  line-height: 1.4; /* Tighten line height for readability */
-  text-align: left; /* Ensure text alignment is left */
+  font-size: 1rem; /* Use a standard font size for paragraphs */
+  line-height: 1.6; /* Ensure a comfortable line height for readability */
+  color: var(--dark-color); /* Use a softer text color for paragraphs */
+  margin: 0 0 20px; /* Add consistent spacing between paragraphs */
 }
 
 .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div > div p:last-of-type {
-  display: flex;
-  align-items: center; /* Align avatar and text horizontally */
-  gap: 4px; /* Reduce spacing between avatar and name */
+  display: flex; /* Align author section horizontally */
+  flex-direction: row; /* Ensure image and text are side by side */
+  align-items: center; /* Vertically center the image and text */
+  gap: 28px; /* Increase spacing between the author image and name */
   margin-top: auto; /* Push the author section to the bottom of the card */
 }
 
 .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div > div p:last-of-type img {
-  width: 28px; /* Further reduce avatar size */
-  height: 28px;
-  border-radius: 50%; /* Ensure avatar is circular */
+  width: 72px; /* Increase the size of the author image */
+  height: 72px; /* Match the width for a circular shape */
+  border-radius: 50%; /* Ensure the author image is circular */
 }
 
-@media (width <= 768px) {
-  .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div {
+.aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div > div img {
+  max-width: 100%; /* Ensure images are fully responsive */
+  height: auto; /* Maintain the aspect ratio of images */
+  border-radius: 8px; /* Add slight rounding to the corners of images */
+}
+
+.aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div > div a {
+  color: var(--link-color); /* Set the link color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div > div a:hover {
+  color: var(--link-hover-color); /* Change the link color on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+@media (max-width: 768px) {
+  .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 {
     flex-direction: column; /* Stack rows vertically on smaller screens */
   }
 
   .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div > div {
-    flex: 1 1 100%; /* Ensure cards take full width on smaller screens */
+    flex: 1 1 100%; /* Ensure cards take the full width on smaller screens */
     max-width: 100%; /* Prevent cards from exceeding full width */
   }
 }
