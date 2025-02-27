@@ -1,0 +1,70 @@
+
+.aihero-drnc0j-61288686-container > .aihero-drnc0j-61288686-wrapper {
+  display: flex;
+  flex-direction: row; /* Ensure side-by-side layout for the hero content */
+  justify-content: space-between; /* Space between the left and right sections */
+  align-items: flex-start; /* Align content to the top */
+  max-width: unset; /* Allow the block to span the full width */
+  padding: 0; /* Remove padding around the hero */
+}
+
+.aihero-drnc0j-61288686-container > .aihero-drnc0j-61288686-wrapper > .block.aihero-drnc0j-61288686 > div:first-of-type {
+  display: flex; /* Enable side-by-side layout for nested sections */
+  flex-direction: row; /* Ensure horizontal alignment */
+  gap: 1rem; /* Tighten spacing between left and right sections */
+  width: 100%; /* Ensure the content spans the full width */
+  align-items: flex-start; /* Align sections to the top */
+}
+
+.aihero-drnc0j-61288686-container > .aihero-drnc0j-61288686-wrapper > .block.aihero-drnc0j-61288686 > div:first-of-type > div:first-child {
+  flex: 1; /* Allocate space for the left section */
+  order: 1; /* Keep the left section on the left */
+  max-width: 50%; /* Limit the left section to 50% width */
+  display: flex; /* Ensure proper layout of elements inside */
+  flex-direction: row; /* Ensure side-by-side alignment for nested elements */
+  flex-wrap: wrap; /* Allow wrapping of text and elements if needed */
+  gap: 1rem; /* Add spacing between elements in the left section */
+}
+
+.aihero-drnc0j-61288686-container > .aihero-drnc0j-61288686-wrapper > .block.aihero-drnc0j-61288686 > div:first-of-type > div:nth-of-type(2) {
+  flex: 1; /* Allocate space for the right section */
+  order: 2; /* Keep the right section on the right */
+  max-width: 50%; /* Limit the right section to 50% width */
+  display: flex; /* Ensure proper layout of elements inside */
+  flex-direction: row; /* Align nested content side by side */
+  flex-wrap: wrap; /* Allow wrapping if necessary */
+  justify-content: flex-start; /* Align the table and content to the top */
+}
+
+.aihero-drnc0j-61288686-container > .aihero-drnc0j-61288686-wrapper > .block.aihero-drnc0j-61288686 > div:first-of-type > div:nth-of-type(2) table {
+  width: 100%; /* Ensure the table spans its allocated space */
+  border-collapse: collapse; /* Ensure table rows and borders are aligned */
+  margin: 0; /* Remove unnecessary margins */
+}
+
+.aihero-drnc0j-61288686-container > .aihero-drnc0j-61288686-wrapper > .block.aihero-drnc0j-61288686 > div:first-of-type > div:nth-of-type(2) table tr {
+  border-bottom: 1px solid #ccc; /* Add a subtle border between rows */
+}
+
+.aihero-drnc0j-61288686-container > .aihero-drnc0j-61288686-wrapper > .block.aihero-drnc0j-61288686 > div:first-of-type > div:nth-of-type(2) p:last-child {
+  display: flex; /* Align the image and text horizontally */
+  align-items: center; /* Vertically align the image and text */
+  gap: 0.5rem; /* Add spacing between the image and text */
+}
+
+.aihero-drnc0j-61288686-container > .aihero-drnc0j-61288686-wrapper > .block.aihero-drnc0j-61288686 > div:first-of-type > div:nth-of-type(2) img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Prevent the image from stretching */
+}
+
+@media (max-width: 600px) {
+  .aihero-drnc0j-61288686-container > .aihero-drnc0j-61288686-wrapper > .block.aihero-drnc0j-61288686 > div:first-of-type {
+    flex-direction: column; /* Stack sections vertically on smaller screens */
+  }
+
+  .aihero-drnc0j-61288686-container > .aihero-drnc0j-61288686-wrapper > .block.aihero-drnc0j-61288686 > div:first-of-type > div {
+    max-width: 100%; /* Ensure sections span full width when stacked */
+  }
+}
