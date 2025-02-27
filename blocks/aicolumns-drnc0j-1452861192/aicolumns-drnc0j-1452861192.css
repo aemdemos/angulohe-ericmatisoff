@@ -3,14 +3,13 @@
   display: flex;
   flex-wrap: wrap; /* Allow rows to wrap for responsiveness */
   gap: 12px; /* Further reduce spacing between rows and columns */
-  background-color: #ffffff; /* Ensure block background is white */
+  background-color: #fff; /* Ensure block background is white */
   padding: 10px; /* Reduce padding around the block */
 }
 
 .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div {
   display: flex;
-  flex-direction: row; /* Ensure rows are displayed side by side */
-  flex-wrap: wrap; /* Allow items within rows to wrap on smaller screens */
+  flex-flow: row wrap; /* Ensure rows are displayed side by side */ /* Allow items within rows to wrap on smaller screens */
   gap: 12px; /* Reduce spacing between cards for a tighter layout */
 }
 
@@ -18,9 +17,9 @@
   flex: 1 1 calc(50% - 12px); /* Adjust card width to fit tighter spacing */
   max-width: calc(50% - 12px); /* Prevent cards from exceeding 50% width */
   box-sizing: border-box; /* Include padding and borders in width calculation */
-  background-color: #ffffff; /* Set card background color */
+  background-color: #fff; /* Set card background color */
   border: none; /* Remove any borders */
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%); /* Subtle shadow for depth */
   padding: 8px; /* Further reduce padding inside the cards */
   display: flex;
   flex-direction: column; /* Stack card content vertically */
@@ -59,7 +58,7 @@
   border-radius: 50%; /* Ensure avatar is circular */
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .aicolumns-drnc0j-1452861192-wrapper > .aicolumns-drnc0j-1452861192 > div {
     flex-direction: column; /* Stack rows vertically on smaller screens */
   }
