@@ -1,6 +1,6 @@
 
 .header-wrapper {
-  background-color: white; /* Ensure a solid white background */
+  background-color: white; /* Ensure solid white background */
 }
 
 .header-wrapper .nav-wrapper {
@@ -57,16 +57,16 @@ header nav .nav-hamburger {
   display: flex; /* Flexbox for side-by-side layout */
   flex-direction: row; /* Ensure horizontal alignment */
   align-items: flex-start; /* Align items to the top */
-  gap: 1rem; /* Narrow the gap between `<h1>` and `<h4>` */
-  max-width: 900px; /* Constrain the width of the content block */
+  gap: 0.8rem; /* Adjust gap for a tighter layout */
+  max-width: 1050px; /* Constrain the block width for a more compact layout */
   margin: 0 auto; /* Center the block horizontally */
-  padding: 1rem; /* Add balanced padding */
+  padding: 2rem; /* Add balanced padding */
   background-color: white; /* Ensure the background remains white */
 }
 
 .default-content-wrapper h1 {
-  font-size: 7rem; /* Increase font size for greater prominence */
-  font-weight: 800; /* Keep the bold weight */
+  font-size: 4.8rem; /* Adjusted font size for better balance */
+  font-weight: 900; /* Keep the bold weight */
   line-height: 1; /* Tighten the line height for compactness */
   margin: 0; /* Remove default margins */
   text-align: left; /* Ensure alignment is explicitly left */
@@ -74,13 +74,12 @@ header nav .nav-hamburger {
 }
 
 .default-content-wrapper h4 {
-  font-size: 1.2rem; /* Maintain font size */
-  line-height: 1.5; /* Maintain good readability */
+  font-size: 1.1rem; /* Maintain font size */
+  line-height: 1.6; /* Maintain good readability */
   color: rgb(19, 19, 19); /* Ensure proper text color */
-  background-color: white; /* Ensure a white background for contrast */
+  background-color: white; /* Set explicit white background */
   margin: 0; /* Remove unnecessary margins */
-  margin-top: 1.5rem; /* Add more vertical spacing for alignment */
-  max-width: 350px; /* Reduce the width for better readability */
-  align-self: flex-start; /* Align the paragraph to the top */
-  text-align: left; /* Left-align the text */
+  padding-top: 0.1rem; /* Fine-tune alignment with the header */
+  max-width: 850px; /* Adjust width for better text flow */
+  text-align: left; /* Keep the text itself left-aligned */
 }
