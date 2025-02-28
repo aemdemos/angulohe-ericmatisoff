@@ -13,6 +13,10 @@
   background-color: white; /* Solid background color */
 }
 
+header {
+  display: flex; /* Flexbox layout for header container */
+}
+
 header nav {
   display: flex; /* Flexbox layout for main header */
   max-width: 1264px; /* Constrain width for centered alignment */
@@ -20,36 +24,6 @@ header nav {
   align-items: center; /* Align items vertically in the center */
   width: 100%; /* Use full available width */
   padding: 0 32px; /* Add horizontal padding */
-}
-
-.default-content-wrapper {
-  display: flex; /* Flexbox for side-by-side layout */
-  flex-direction: row; /* Ensure horizontal alignment */
-  align-items: flex-start; /* Align content at the top */
-  gap: 30px; /* Adjust spacing between sections for balance */
-  max-width: 1200px; /* Constrain width for content block */
-  margin: 0 auto; /* Center the block horizontally */
-}
-
-.default-content-wrapper h1 {
-  display: block; /* Ensure block-level layout */
-  white-space: pre-wrap; /* Preserve line breaks for vertical stacking */
-  font-size: 3rem; /* Large font size for heading */
-  font-weight: bold; /* Bold text for emphasis */
-  margin: 0; /* Remove default margins */
-  line-height: 1.2; /* Adjust line height for proper spacing */
-  flex: 1; /* Allow heading to take up its space */
-  text-align: left; /* Align text to the left */
-}
-
-.default-content-wrapper h4 {
-  flex: 1; /* Allow right section to take up remaining space */
-  font-size: 1rem; /* Smaller font size for descriptive text */
-  margin: 0; /* Remove default margins */
-  line-height: 1.5; /* Adjust line height for readability */
-  align-self: flex-start; /* Align text at the top */
-  max-width: 400px; /* Constrain width of descriptive text */
-  text-align: left; /* Align text to the left */
 }
 
 header nav .nav-brand {
@@ -77,4 +51,34 @@ header nav .nav-tools {
 header nav .nav-hamburger {
   display: none; /* Hide hamburger menu */
   visibility: hidden; /* Ensure it's not visible */
+}
+
+.default-content-wrapper {
+  display: flex; /* Flexbox for side-by-side layout */
+  flex-direction: row; /* Ensure horizontal alignment */
+  align-items: flex-start; /* Align content at the top */
+  gap: 140px; /* Adjust spacing between sections for balance */
+  max-width: 1200px; /* Constrain width for content block */
+  margin: 0 auto; /* Center the block horizontally */
+}
+
+.default-content-wrapper h1 {
+  display: block; /* Ensure block-level layout */
+  white-space: pre-wrap; /* Preserve line breaks for vertical stacking */
+  font-size: 7rem; /* Adjust font size for better proportion */
+  font-weight: bold; /* Bold text for emphasis */
+  margin: 0; /* Remove default margins */
+  line-height: 1.1; /* Adjust line height for compact stacking */
+  flex: 4; /* Adjust width of the left section */
+  text-align: left; /* Align text to the left */
+}
+
+.default-content-wrapper h4 {
+  flex: 2; /* Adjust width of the right section */
+  font-size: 1rem; /* Smaller font size for descriptive text */
+  margin: 0; /* Remove default margins */
+  line-height: 1.5; /* Adjust line height for readability */
+  align-self: flex-start; /* Align text at the top */
+  max-width: 480px; /* Constrain width of descriptive text */
+  text-align: left; /* Align text to the left */
 }
